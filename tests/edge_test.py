@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
 
     import keyboard
-
+    
     parser = argparse.ArgumentParser(description="Realtime TTS script with pause/resume functionality.")
     parser.add_argument("-l", "-voices", "-list", "--list-voices", "--listvoices", nargs='*', default=None, 
                         help="List voices. Optional filters: language code and/or gender (e.g. 'en', 'male', 'en female')")
@@ -130,19 +130,19 @@ if __name__ == "__main__":
             print("\nStream finished.")
             break
 
-        if keyboard.is_pressed('space'):
-            if is_playing:
-                stream.pause()
-                print("Paused")
-            else:
-                stream.resume()
-                print("Resumed")
-            is_playing = not is_playing
-            time.sleep(0.1)  # Debounce
+        # if keyboard.is_pressed('space'):
+        #     if is_playing:
+        #         stream.pause()
+        #         print("Paused")
+        #     else:
+        #         stream.resume()
+        #         print("Resumed")
+        #     is_playing = not is_playing
+        #     time.sleep(0.1)  # Debounce
             
-        if keyboard.is_pressed('q'):
-            print("\nQuitting...")
-            break
+        # if keyboard.is_pressed('q'):
+        #     print("\nQuitting...")
+        #     break
             
         time.sleep(0.1)
     

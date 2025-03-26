@@ -1,0 +1,9 @@
+Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                                   Version              Architecture Description
++++-======================================-====================-============-=================================
+un  linux-image                            <none>               <none>       (no description available)
+iF  linux-image-6.11.0-19-generic          6.11.0-19.19~24.04.1 amd64        Signed kernel image generic
+ii  linux-image-generic-hwe-24.04          6.11.0-19.19~24.04.1 amd64        Generic Linux kernel image
+un  linux-image-unsigned-6.11.0-19-generic <none>               <none>       (no description available)
